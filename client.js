@@ -71,12 +71,12 @@ function json2htmltable(data) {
     return "<table><tr><th>City</th><th>State</th><th>Zips</th></tr>" + rows + "</table>";
 }
 // Instant Ajax Request — fires on every keyup, not just Enter
-/*searchInput.addEventListener('keyup', function (event) {
+searchInput.addEventListener('keyup', function (event) {
     search();
     if (event.key === 'Enter') 
         searchInput.value = ''; // clear the field after an explicit Enter search
-});*/
-
+});
+/*
 // Instant Ajax Request — at least 2 characters before suggesting and debounce ~300ms after the last keystroke
 var debounceTimer = null;
 searchInput.addEventListener('keyup', function (event) {
@@ -90,4 +90,4 @@ searchInput.addEventListener('keyup', function (event) {
     var query = searchInput.value.trim();
     if (query.length < 2) return;            // AC5: need at least 2 characters before suggesting
     debounceTimer = setTimeout(search, 300); // AC7: debounce ~300ms after the last keystroke
-});
+});*/
